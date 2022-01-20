@@ -18,5 +18,5 @@ echo "API_SERVER IP is $API_SERVER_IP"
 3. Access the application using the IP printed above
 
 <p align="center">
-  <img src="../anthos-baremetal-edge-deployment/docs/images/pos-v1.png">
+  <img src="../scripts/abm-edge-deploy-ansible/docs/images/pos-v1.png">
 </p>

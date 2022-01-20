@@ -20,13 +20,13 @@ build:
   artifacts:
   - image: us-docker.pkg.dev/anthos-dpe-abm-edge-pos/abm-edge-pos-images/api-server
     jib:
-      project: api-server
+      project: src/api-server
   - image: us-docker.pkg.dev/anthos-dpe-abm-edge-pos/abm-edge-pos-images/inventory
     jib:
-      project: inventory
+      project: src/inventory
   - image: us-docker.pkg.dev/anthos-dpe-abm-edge-pos/abm-edge-pos-images/payments
     jib:
-      project: payments
+      project: src/payments
   tagPolicy:
     gitCommit: { }
   local:

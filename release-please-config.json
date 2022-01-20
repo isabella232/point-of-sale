@@ -1,0 +1,20 @@
+{
+    "bootstrap-sha": "5d436e10c8752861585003828d1c7c929a1f3f4c",
+    "packages": {
+        "src/service-sdk": {
+            "release-type": "java-yoshi"
+        },
+        "src/ui": {
+            "release-type": "node"
+        },
+        "src/api-server": {
+            "release-type": "java-yoshi"
+        },
+        "src/inventory": {
+            "release-type": "java-yoshi"
+        },
+        "src/payments": {
+            "release-type": "java-yoshi"
+        }
+    }
+}

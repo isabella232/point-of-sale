@@ -11,7 +11,7 @@ In the quick start guide that follows we _emulate_ nodes in an edge location
 using **Google Compute Engine (GCE)** VMs and walkthrough a use-case for
 installing **Anthos on Bare Metal (ABM)** in that edge location. The
 installation process also installs **Anthos Config Management (ACM)** in the
-Anthos on Bare Metal clusters. We then show how a [**Point-Of-Sales** application](/point-of-sale-app/)
+Anthos on Bare Metal clusters. We then show how a [**Point-Of-Sales** application](/src/)
 is automatically deployed to this edge location by _syncing_ with the [configurations](acm-config-sink/)
 found in this repository using **ACM**. Finally, we experiment by updating the
 configurations in this repository to see the changes being adopted on the edge
@@ -47,7 +47,7 @@ _(including instructions for installing in an [Intel NUC](https://www.intel.com/
   - **[Java](https://www.oracle.com/java/technologies/downloads/#java11)** [11.*] _(Optional)_
 
 > _**Note:** The prerequisites marked as _(Optional)_ are only required if you
-> want to modify the source for the [Point-Of-Sales](/point-of-sale-app)
+> want to modify the source for the [Point-Of-Sales](/src)
 > application. It is not required for just trying this Quick start._
 ---
 
@@ -65,7 +65,7 @@ The following quick start guide will take approximately **55-60 minutes** to com
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/anthos-edge-usecases
 
 # move into the root of the infrastructure setup directory
-cd anthos-edge-usecases/anthos-baremetal-edge-deployment
+cd anthos-edge-usecases/scripts/abm-edge-deploy-ansible
 ```
 
 
@@ -190,7 +190,7 @@ Proceed!!
 
 ```sh
 # this will configure the GCE instances with all the necessary tools, install Anthos BareMetal, install Anthos
-# Config Management and configure it to sync with the configs at $ROOT_REPO_URL/anthos-baremetal-edge-deployment/acm-config-sink
+# Config Management and configure it to sync with the configs at $ROOT_REPO_URL/scripts/abm-edge-deploy-ansible/acm-config-sink
 ansible-playbook -i inventory cloud-full-install.yaml
 ```
 ```sh
